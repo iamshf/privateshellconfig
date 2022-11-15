@@ -1,0 +1,8 @@
+write_enable=yes
+anon_mkdir_write_enable=yes
+anon_other_write_enable=yes
+anon_upload_enable=yes
+anon_world_readable_only=no
+dirlist_enable=yes
+local_root=/data/ftp/
+#local_max_rate=2000000
