@@ -1,0 +1,7 @@
+1、修改/etc/fstab，并增加类似如下内容
+/data/ftp/folder1/ /data/ftp/userftp/folder1/ xfs defaults,bind,noauto,x-systemd.automount,x-systemd.idle-timeout=10m 0 0
+
+2、重新加载配置
+sudo systemctl daemon-reload 
+sudo systemctl restart local-fs.target
+sudo mount -a
